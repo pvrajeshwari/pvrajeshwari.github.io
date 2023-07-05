@@ -5,7 +5,7 @@
             <table>
                 <tr>
                   <th style="color: darkmagenta;"> Enter FirstName </th>
-                  <td><input type="text" name="firstName" placeholder="firstName" required></td>
+                  <td><input type="text" name="firstName" placeholder="firstName" required min="3" max="10"></td>
                 </tr>
                 <tr>
                   <th style="color: darkmagenta;"> Enter LastName</th>
@@ -19,10 +19,7 @@
                     <th style="color: darkmagenta;">Enter PassWord</th>
                     <td><input type="password" name="password" placeholder="password"></td>
                 </tr>
-                <tr>
-                    <th style="color: darkmagenta;">Enter Address</th>
-                    <td><input type="text" name="adress" placeholder="adress" required></td>
-                </tr>
+                
                 <tr>
                     <th style="color: darkmagenta;">Enter Date Of Birth</th>
                     <td><input type="date" name="dateofbirth" placeholder="dateofbirth"></td>
@@ -46,6 +43,14 @@
                 <tr>
                     <th style="color: darkmagenta;">Enter PhoneNo</th>
                     <td><input type="tel" name="phoneno" placeholder="phoneno" ></td>
+                    <tr>
+                        <th style="color: darkmagenta;">Upload File</th>
+                        <td><input type="file" name="file" placeholder="file" ></td>
+                    </tr>
+                    <tr>
+                        <th style="color: darkmagenta;">Enter Address</th>
+                        <td> <textarea  cols="30" rows="10"></textarea></td>
+                    </tr>
                 </tr>
                 <tr><th style="color: darkmagenta;">Enter Skills</th></tr>
                 </table>
@@ -54,7 +59,7 @@
                         
                         <input type="checkbox" >HTML
                         <input type="checkbox"> CSS
-                        <input type="checkbox"> java
+                        <input type="checkbox"> JAVA
                         <input type="checkbox"> SQL
                     </div>
                     <br>
