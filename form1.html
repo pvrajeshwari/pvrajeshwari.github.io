@@ -1,7 +1,7 @@
 <html>
     <head></head>
     <body>
-        
+        <form>
             <table>
                 <tr>
                   <th style="color: darkmagenta;"> Enter FirstName </th>
@@ -9,7 +9,7 @@
                 </tr>
                 <tr>
                   <th style="color: darkmagenta;"> Enter LastName</th>
-                  <td><input type="text" name="lastName" placeholder="lastName" required></td>  
+                  <td><input type="text" name="lastName" placeholder="lastName" required minlength="3"></td>  
                 </tr>
                 <tr>
                     <th style="color: darkmagenta;">Enter Email</th>
@@ -17,7 +17,7 @@
                 </tr>
                 <tr>
                     <th style="color: darkmagenta;">Enter PassWord</th>
-                    <td><input type="password" name="password" placeholder="password"></td>
+                    <td><input type="password" name="password" placeholder="password" minlength="8"></td>
                 </tr>
                 
                 <tr>
@@ -47,26 +47,31 @@
                         <th style="color: darkmagenta;">Upload File</th>
                         <td><input type="file" name="file" placeholder="file" ></td>
                     </tr>
-                    <tr>
-                        <th style="color: darkmagenta;">Enter Address</th>
-                        <td> <textarea  cols="30" rows="10"></textarea></td>
-                    </tr>
+                    
                 </tr>
-                <tr><th style="color: darkmagenta;">Enter Skills</th></tr>
+                <TH style="color: darkmagenta;">Enter Skills</TH>
+                <td>
+                    <input type="checkbox" >HTML
+                    <input type="checkbox"> CSS
+                    <input type="checkbox"> JAVA
+                    <input type="checkbox"> SQL
+                </td>
+                <tr>
+                    <th style="color: darkmagenta;">Enter Address</th>
+                    <td> <textarea  cols="30" rows="10"></textarea></td>
+                </tr>
+                <!-- <th><button type="submit" style="color: whitesmoke; background-color: black;" >Register</button> -->
+                <!-- </th> -->
+                <!-- <td><button type="reset" style="color: white; background-color: black;">Reset</button> -->
+                </td>
                 </table>
-                <form>
-                    <div>
-                        
-                        <input type="checkbox" >HTML
-                        <input type="checkbox"> CSS
-                        <input type="checkbox"> JAVA
-                        <input type="checkbox"> SQL
-                    </div>
-                    <br>
-                    <div>
-                        <button type="submit" style="color: whitesmoke; background-color: black;">Register</button>
-                        <button type="reset" style="color: white; background-color: black;">Reset</button>
-                        </div>
+                
+                    
+                    
+                     <div>
+                        <button type="submit" style="color: whitesmoke; background-color: black;">Register</button> 
+                        <button type="reset" style="color: white; background-color: black;">Reset</button> 
+                         </div> 
                 </form>
                 
               
