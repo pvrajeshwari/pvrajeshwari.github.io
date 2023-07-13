@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title>Combinator</title>
+        <style>
+            div p {
+                color: blue;
+            }
+            div > p {                  
+                color: brown;
+            }
+            div + p {                      
+                color: green;
+            }
+            div ~ p {
+                color:orangered;
+            }
+            .positionfixed{
+                position: fixed;                      
+                top: 0;
+                right: 0;
+
+            }
+
+            .positionrelative{
+                position: relative;
+                left: 300px;
+            }
+            .positionAbsolute{
+                position: absolute;
+                top: 50px;
+            }
+            .nameAbsolute{                  
+                position: absolute;
+                left: 0;
+            }
+            .relative {
+                position: relative;
+            }
+            img{
+                opacity: 0.7;
+            }
+
+        </style>
+    </head>
+    <body>
+
+
+        <!--CSS Combinator-->
+
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor</p>
+            <span>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+            </span>
+        </div>
+        <p>Lorem ipsum dolor</p>                 <!--adjuscent sibling selector line*/ -->
+        <p>Lorem ipsum dolor sit amet</p>       <!--/2 para tag also genaral sibling selector---bcz it has high priority/-->
+        
+        
+        <!--position-->
+
+        <div class="positionfixed">Lets check css property Position fixed</div> 
+        <div class="positionrelative">css property Position relative</div>
+        <div class="positionAbsolute">css property Position absolute</div>
+       
+        <div class="relative">
+        <img src="IMG_3672.JPG" width="50%">
+        <span class="nameAbsolute">Rajeshwari</span></div>
+    
+    
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--1.Descendent Selector
+div p{
+    property : value;
+}
+2.Child Selector
+div > p {
+    property : value;
+}
+3.Adjacent Sibling Selector
+div + p{
+    property : value
+}
+4.General Sibling Selector
+div ~ p{
+    property : value
+}
+3 and 4th selector 4th selector has higher priority-->
+
+
+
+<!-- position
+    relative
+    absolute
+ fixed-->

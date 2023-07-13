@@ -1,0 +1,22 @@
+ul{
+    list-style-type: none;
+    background-color: blue;
+    /* background-color:rgb(60,56,78);
+    backgroud-color */
+}
+li{
+    padding: 10px;
+    color: white;
+}
+
+body{
+    margin: 0;
+
+}
+li{
+    display: inline-block;
+}
+.moveRight{
+    color: brown;
+    float:right;
+}
