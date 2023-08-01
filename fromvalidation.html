@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function valiation(){
+            console.log("calling validation")
+            var firstname = document.getElementById("firstname")
+            console.log(firstname.value)
+            var errorFirstName =document.getElementById("errorFirstName")
+            errorFirstName.innerHTML = ''
+            
+            if(firstname.value ==''){
+                console.log("please Enter FirstName")
+            
+            console.log(errorFirstName)
+            errorFirstName.innerHTML ="please enter firstname"
+            errorFirstName.style.color ='red'
+            }
+    
+            var lastname = document.getElementById("lastname")
+            console.log(lastname.value)
+            var errorLastName =document.getElementById("errorLastName")
+            errorLastName.innerHTML = ''
+            
+            if(lastname.value =='')
+            {
+                console.log("please Enter LastName")
+            
+        
+            console.log(errorLastName)
+            errorLastName.innerHTML ="please enter lastname"
+            errorLastName.style.color ='red'
+            }
+    
+            var password = document.getElementById("password")
+            console.log(password.value)
+            if(password.value ==''){
+                console.log("please Enter Password")
+            
+            var errorPassword= document.getElementById("errorPassword")
+            console.log(errorPassword)
+            errorPassword.innerHTML ="please enter Password"
+            errorPassword.style.color ='red'
+            }
+
+            var city =document.registeration.city
+            console.log(city.value)
+            if(city.value=="0"){
+                console.log("please select city")
+                var errorcity =document.getElementById("errorcity")
+                console.log(errorcity)
+                errorCity.innerHTML ="please select city"
+                errorCity.style.color ='red'
+            }
+            // document,formname,fieldname
+            var gender = document.registeration.gender
+            console.log(gender)
+            console.log(gender[0])
+            console.log(gender[0].checked)
+            console.log(gender[1].checked)
+            console.log(gender[2].checked)
+            if(gender[0].checked==false&&
+            gender[1].checked==false&&gender[2].checked==false){
+                console.log("Please Select Gender")
+                var errorGender = document.getElementById("errorGender")
+                console.log(errorGender)
+                errorGender.innerHTML ="Please Select Gender"
+                errorGender.style.color ='red'
+
+            }
+            var genderData
+            if(gender[0].checked==true){
+                genderData =gender[0].value
+            }else if(gender[1].checked==true){
+                genderData =gender[1].value
+
+            }
+            else{
+                genderData = gender[2].value
+            }
+
+console.log(firstname.value)
+console.log(lastname)
+console.log(city.value)
+console.log(password.value)
+console.log(city.value)
+
+ var registerationObject = {
+    'firstname':firstname.value,
+    'lastname':lastname.value,
+     'gender':genderData
+}
+console.log(registerationObject)
+var registerationStringData = JSON.stringify(registerationObject)
+localStorage.setItem("csr12batch",registerationStringData)
+var username =localStorage.getItem("name")
+console.log(username)
+
+
+        }
+        function display() {
+    console.log("calling the display Funcion")
+}
+function mouseover() {
+    console.log( "calling the mouse over")
+}
+function double() {
+    console.log("calling the doubleClick")
+}
+function myFunction() {
+  document.body.style.backgroundColor = "#f3f3f3";
+  document.body.style.backgroundImage = "url('lone-tree.jpg')";
+}
+
+
+      let arr = [1,2,3]
+
+      console.log(arr)
+      arr.push(4)
+      arr.push(5)
+
+      console.log(arr)
+
+      let userObject = {
+        "name": 'tom'
+      }
+
+      let userArrayObject = []
+      userArrayObject.push(userObject)
+
+      let user1 = {
+        "name": "ram"
+      }
+
+      require('file.json')
+      userArrayObject.push(user1)
+
+      console.log(userArrayObject)
+    </script>
+</head>
+<body>
+    <form name="registeration">
+        <div>
+            <label>Enter FirstName</label>
+            <input type="text" name="firstname" id="firstname">
+            <span id="errorFirstName"></span>
+        </div>
+        <br>
+        <div>
+            <label>Enter LastName</label>
+            <input type="text" name="lastname" id="lastname">
+            <span id="errorLastName"></span>
+        </div>
+        <br>
+        <div>
+            <label>Enter PassWord</label>
+            <input type="password" name="password" id="password">
+            <span id="errorPassword"></span>
+        </div>
+        <br>
+        <div>
+            <label>Select City</label>
+            <select name="city">
+                <option value="0">--SelectCity--</option>
+                <option>BAngaluru</option>
+                <option>Hubli</option>
+                <option>Mysore</option>
+            </select>
+            <span id="errorCity"></span>
+        </div>
+        <br>
+        <div>
+            <label>Select Gender</label>
+            <input type="radio" name="gender" value="MAle">Male
+            <input type="radio" name="gender" value="Female">Female
+            <input type="radio" name="gender" value="Other">Others
+            <span id="errorGender"></span>
+        </div>
+        <br>
+        <button type="button" onclick="valiation()">Register</button>
+
+    </form>
+    <br>
+<button  type="button" onclick="display()">Displaymessage</button>
+<button type="button"  onmouseover="mouseover()">MouseoverMessage</button>
+<button type="button" ondblclick="double()">DoubleClick</button>  
+<button type="button" onclick="myFunction()">Set background image</button>
+
+</body>
+</html>

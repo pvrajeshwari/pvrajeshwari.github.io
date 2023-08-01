@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log("welcome to JavaScript")
+//type error
+//reference error
+//variable
+//var is keyword
+        var a;
+        console.log(typeof(a))// undefined
+        console.log(a)
+
+        a = 10
+        console.log(typeof(a))
+        console.log(a)
+        //console.log(typeof(a))
+        a = 'Javascript'
+        console.log(a)
+        console.log(typeof(a))
+        a = 4.3
+        console.log(a) 
+        console.log(typeof(a))
+        a = true
+        console.log(a)
+        console.log(typeof(a))
+        a = 'J'
+        console.log(a)
+        console.log(typeof(a))
+        a=30
+        console.log(typeof(a))
+        console.log(a)
+        b=20
+        if(a==b){
+        console.log("Equals")
+    }
+    else{
+        console.log("Not Equals")
+
+    }
+
+        // datatypes num ,boolean,string,undefined
+        //
+        // How to Decalre Function??
+
+        //function functionname(){
+
+       // }
+       function workWithJavaScript(){
+        console.log("you are learing function")
+       }
+       workWithJavaScript()
+       function takeSomeThing(a){
+        console.log("Taking chocaloate cost is",a)
+       }
+       takeSomeThing(20)
+       function getGroceries(a){
+        console.log("Getting Groceries")
+        return "groceries"
+       }
+       //getGroceries(100)
+       //console.log(getGroceries(100)
+       var itemName =getGroceries(100)
+       console.log(itemName)
+       //javascript
+       //to creat   dynamic webpage
+       //event handling 
+       //action -response
+       // action-event- event handing
+       function ClickMe(){
+        console.log("User has clicked on a button")
+       }
+       function Reset(){
+        console.log("User has Reset  a button")
+       }
+       function Submit(){
+        console.log("User has submit  a button")
+       }
+       function Password(){
+        console.log("User has password  a button")
+       }
+       function exit(){
+        console.log("User has exit  a button")
+       }
+       function regition(){
+        console.log("User has regition  a button")
+       }
+       function back(){
+        console.log("User has back  a button")
+       }
+// 5 button  action  with click using 5  function 
+    
+    </script>
+</head>
+<body>
+    <button onclick="ClickMe()">Click Me!!</button>
+    <!-- action- click - event in javascript
+    event handling is done by function -->
+        <!-- sending data javaScript to html
+        Reading data from input tag -->
+        <button onclick="Submit()">Submit !!</button>
+        <button onclick="Password()">Enter Password!!</button>
+
+        <button onclick="exit()">exit !!</button>
+
+        <button onclick="regition()"> Regition !!</button>
+
+        <button onclick="back()">back Button!!</button>
+
+
+</body>
+</html>
